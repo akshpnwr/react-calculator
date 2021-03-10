@@ -1,0 +1,15 @@
+.Button {
+  outline: none;
+  border: 1px solid white;
+  font-size: 1.5rem;
+  padding: 0.8em;
+  background-color: rgba(190, 255, 252, 0.9);
+}
+
+.Button:hover {
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+.Span {
+  grid-column: span 2;
+}

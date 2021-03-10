@@ -1,3 +1,12 @@
-.Red {
-  color: red;
+.App {
+  height: 100vh;
+  background: rgb(81, 247, 237);
+  background: linear-gradient(
+    90deg,
+    rgba(81, 247, 237, 1) 0%,
+    rgba(40, 53, 193, 1) 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
