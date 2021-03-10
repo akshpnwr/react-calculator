@@ -11,11 +11,9 @@ class Calculator extends Component {
   };
 
   numberButtonHandler = (e) => {
-    const value = Number(
-      this.state.cur
-        ? this.state.cur + e.target.textContent
-        : e.target.textContent
-    );
+    const value = this.state.cur
+      ? this.state.cur + e.target.textContent
+      : e.target.textContent;
 
     this.setState({
       cur: value,
@@ -68,25 +66,25 @@ class Calculator extends Component {
   };
 
   performOperation = () => {
-    console.log(this);
+    console.log(this.state.cur, this.state.prev);
 
     let result;
 
     switch (this.state.operator) {
       case '+':
-        result = this.state.prev + this.state.cur;
+        result = Number(this.state.prev) + Number(this.state.cur);
         break;
 
       case '-':
-        result = this.state.prev - this.state.cur;
+        result = Number(this.state.prev) - Number(this.state.cur);
         break;
 
       case '*':
-        result = this.state.prev * this.state.cur;
+        result = Number(this.state.prev) * Number(this.state.cur);
         break;
 
       case '÷':
-        result = this.state.prev / this.state.cur;
+        result = Number(this.state.prev) / Number(this.state.cur);
         break;
 
       default:

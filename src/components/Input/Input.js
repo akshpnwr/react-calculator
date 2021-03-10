@@ -19,7 +19,7 @@ const input = (props) => {
       <Number clicked={props.numberClicked} type="8" />
       <Number clicked={props.numberClicked} type="9" />
       <Number clicked={props.operatorClicked} type="-" />
-      <Number type="." />
+      <Number clicked={props.numberClicked} type="." />
       <Number clicked={props.numberClicked} type="0" />
       <Number clicked={props.equalClicked} span={true} type="=" />
     </div>
