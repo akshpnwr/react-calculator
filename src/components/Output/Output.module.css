@@ -15,4 +15,15 @@
   border-bottom: 1px solid white;
   word-wrap: break-word;
   word-break: break-all;
+  color: white;
+}
+
+.Previous {
+  color: rgb(211, 210, 210);
+  font-size: 1.5rem;
+}
+
+.Current {
+  color: rgb(236, 232, 232);
+  font-size: 2.5rem;
 }

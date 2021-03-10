@@ -4,7 +4,11 @@ const number = (props) => {
   let buttonClasses = [classes.Button];
 
   if (props.span) buttonClasses.push(classes.Span);
-  return <button className={buttonClasses.join(' ')}>{props.type}</button>;
+  return (
+    <button onClick={props.clicked} className={buttonClasses.join(' ')}>
+      {props.type}
+    </button>
+  );
 };
 
 export default number;

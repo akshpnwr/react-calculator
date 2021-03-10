@@ -1,27 +1,27 @@
 import classes from './Input.module.css';
 import Number from './Number/Number';
 
-const input = () => {
+const input = (props) => {
   return (
     <div className={classes.Input}>
-      <Number span={true} type="AC" />
-      <Number type="DEL" />
-      <Number type="÷" />
-      <Number type="1" />
-      <Number type="2" />
-      <Number type="3" />
-      <Number type="*" />
-      <Number type="4" />
-      <Number type="5" />
-      <Number type="6" />
-      <Number type="+" />
-      <Number type="7" />
-      <Number type="8" />
-      <Number type="9" />
-      <Number type="-" />
+      <Number clicked={props.clear} span={true} type="AC" />
+      <Number clicked={props.delete} type="DEL" />
+      <Number clicked={props.operatorClicked} type="÷" />
+      <Number clicked={props.numberClicked} type="1" />
+      <Number clicked={props.numberClicked} type="2" />
+      <Number clicked={props.numberClicked} type="3" />
+      <Number clicked={props.operatorClicked} type="*" />
+      <Number clicked={props.numberClicked} type="4" />
+      <Number clicked={props.numberClicked} type="5" />
+      <Number clicked={props.numberClicked} type="6" />
+      <Number clicked={props.operatorClicked} type="+" />
+      <Number clicked={props.numberClicked} type="7" />
+      <Number clicked={props.numberClicked} type="8" />
+      <Number clicked={props.numberClicked} type="9" />
+      <Number clicked={props.operatorClicked} type="-" />
       <Number type="." />
-      <Number type="0" />
-      <Number span={true} type="=" />
+      <Number clicked={props.numberClicked} type="0" />
+      <Number clicked={props.equalClicked} span={true} type="=" />
     </div>
   );
 };
