@@ -1,14 +1,9 @@
-import classes from "./App.module.css";
-import { Component } from "react";
-import Layout from "./containers/Layout/Layout";
+import { Component } from 'react';
+import Calculator from './containers/Caculator/Calculator';
 
 class App extends Component {
   render() {
-    return (
-      <div className={classes.App}>
-        <Layout />
-      </div>
-    );
+    return <Calculator />;
   }
 }
 
